@@ -42,7 +42,7 @@ function displayServices() {
     container.innerHTML = services.map((service, index) => {
         const isEven = index % 2 === 1;
         const features = service.features ? (Array.isArray(service.features) ? service.features : []) : [];
-        const imageUrl = service.image_url || 'assets/images/agg.jpeg';
+        const imageUrl = service.image_url || 'assets/images/images.jpg';
         
         return `
             <div id="${service.slug}" class="service-detail" data-aos="fade-up" data-aos-delay="${index * 100}">
